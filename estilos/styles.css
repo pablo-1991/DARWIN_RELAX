@@ -1,0 +1,162 @@
+* {
+    font-family: 'Zilla Slab', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.3fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+main {
+    background: rgb(65, 182, 191);
+    background: linear-gradient(128deg, rgba(65, 182, 191, 0.9023984594) 44%, rgba(42, 36, 226, 0.9023984594) 100%);
+    font-weight: bold;
+    grid-area: main;
+}
+
+/*------------------------------------HEADER--------------------------------------*/
+header {
+    background-color: rgb(199, 144, 72);
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    grid-area: header;
+}
+
+header img {
+    width: auto;
+    height: 15vh;
+}
+
+header nav {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+header nav ul li {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+    grid-area: nav;
+    color: white;
+}
+
+
+/*----------------------------------MAIN-----------------------------------*/
+main {
+    background-image: url("../imagenes/fondoondas.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.hero h1 {
+    font-size: 50px;
+    padding: 3%;
+    color: black;
+    text-align: start;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+    padding: 0% 10%;
+}
+
+.masajes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+}
+
+.masajes h2 {
+    font-size: 50px;
+    padding: 3%;
+    color: black;
+    text-align: start;
+    font-weight: bold;
+}
+
+.masajes ul {
+    font-size: 20px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    text-align: start;
+}
+
+.turnos {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.turnos h2 {
+    font-size: 50px;
+    padding: 3%;
+    color: black;
+    text-align: start;
+    font-weight: bold;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+.contacto h2 {
+    font-size: 50px;
+    padding: 3%;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*-------------------------------FOOTER------------------------------------*/
+
+footer {
+    background-color: rgb(192, 150, 35);
+    grid-area: footer;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
