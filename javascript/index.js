@@ -81,7 +81,7 @@ while (ingresar != "salir") {
 // ------------------------------DESAFIO ENTREGABLE N°1---------------------------------
 
 
-function solicitarNombre() {
+/*function solicitarNombre() {
     alert("Bienvenido a Darwin Relax!");
     let nombre = prompt("Por favor, ingrese su nombre:");
     let apellido = prompt("Ingrese su apellido:");
@@ -142,4 +142,31 @@ function cobro(masaje, precio) {
 solicitarNombre()
 let masajeElegido = pedido();
 let precioFinal = verificarPrecio(masajeElegido);
-cobro(masajeElegido, precioFinal);
+cobro(masajeElegido, precioFinal);*/
+
+// --------------------------------DESAFÍO COMPLEMENTARIO N°2-------------------------------
+
+class Masaje {
+    constructor(ID, Nombre, Precio) {
+        this.ID = ID;
+        this.Nombre = Nombre;
+        this.Precio = Precio;
+    }
+}
+
+const masajes = [];
+
+masajes.push(new Masaje("01", "Masaje descontracturante", "1500"))
+masajes.push(new Masaje("02", "Masaje deportivo", "1800"))
+masajes.push(new Masaje("03", "Masaje tailandes", "2000"))
+masajes.push(new Masaje("04", "Masaje con acupuntura", "2500"))
+masajes.push(new Masaje("05", "Masaje con ventosas", "2800"))
+
+console.table(masajes)
+
+console.log(masajes.length)
+
+console.log(masajes.includes("Masaje chino"))
+
+
+

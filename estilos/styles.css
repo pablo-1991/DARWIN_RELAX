@@ -26,7 +26,7 @@ main {
 /*------------------------------------HEADER--------------------------------------*/
 header {
     background-color: rgb(199, 144, 72);
-    padding: 2%;
+    padding: 1%;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -36,7 +36,7 @@ header {
 
 header img {
     width: auto;
-    height: 15vh;
+    height: 20vh;
 }
 
 header nav {
@@ -50,7 +50,7 @@ header nav ul li {
     display: inline;
     color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     padding: 15px 25px;
 }
 
