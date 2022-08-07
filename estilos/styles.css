@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -25,7 +26,7 @@ main {
 
 /*------------------------------------HEADER--------------------------------------*/
 header {
-    background-color: rgb(199, 144, 72);
+    background: linear-gradient(90deg, rgba(255, 98, 0, 0.8799894957983193) 9%, rgba(202, 170, 5, 0.8575805322128851) 88%);
     padding: 1%;
     display: flex;
     flex-direction: row;
@@ -60,7 +61,6 @@ header nav ul li a {
     grid-area: nav;
     color: white;
 }
-
 
 /*----------------------------------MAIN-----------------------------------*/
 main {
@@ -148,7 +148,6 @@ main {
     text-align: center;
     font-weight: bold;
 }
-
 
 /*-------------------------------FOOTER------------------------------------*/
 
