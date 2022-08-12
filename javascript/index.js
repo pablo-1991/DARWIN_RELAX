@@ -171,6 +171,17 @@ console.log(masajes.includes("Masaje chino"))*/
 
 // --------------------------------1° ENTREGA PROYECTO FINAL--------------------------------
 
+
+function crearLista() {
+    let listado = document.getElementById("listado");
+    let listaMasajes = ["MASAJE DESCONTRACTURANTE", "MASAJE DEPORTIVO", "MASAJE TAILANDES", "MASAJE CON ACUPUNTURA", "MASAJE CON VENTOSAS", "MASAJE SEDATIVO", "MASAJE CON CRIOTERAPIA (VENDAS FRIAS)", "DRENAJE LINFATICO"];
+    for (const masaje of listaMasajes) {
+        const li = document.createElement("li");
+        li.innerText = masaje
+        listado.append(li);
+    }
+}
+
 function solicitarNombre() {
     alert("Bienvenido a Darwin Relax!");
     let nombre = prompt("Por favor, ingrese su nombre:");
@@ -184,8 +195,8 @@ function solicitarNombre() {
 
 function pedido() {
     let masaje;
-    do { masaje = prompt("Qué tipo de masaje necesitas? Ingresa el número correspondiente al masaje: \n 1)Masaje Descontracturante \n 2)Masaje Deportivo \n 3)Masaje Tailandes \n 4)Masaje con Acupuntura \n 5)Masaje con Ventosas"); }
-    while (masaje != 1 && masaje != 2 && masaje != 3 && masaje != 4 && masaje != 5);
+    do { masaje = prompt("Qué tipo de masaje necesitas? Ingresa el número correspondiente al masaje: \n 1)Masaje Descontracturante \n 2)Masaje Deportivo \n 3)Masaje Tailandes \n 4)Masaje con Acupuntura \n 5)Masaje con Ventosas \n 6)Masaje Sedativo \n 7)Masaje con Crioterapia (vendas frías) \n 8)Drenaje Linfático") }
+    while (masaje != 1 && masaje != 2 && masaje != 3 && masaje != 4 && masaje != 5 && masaje != 6 && masaje != 7 && masaje != 8);
 
     switch (masaje) {
         case "1":
@@ -195,9 +206,15 @@ function pedido() {
         case "3":
             return "masaje tailandes";
         case "4":
-            return "masaje acupuntura";
+            return "masaje con acupuntura";
         case "5":
-            return "masaje ventosas";
+            return "masaje con ventosas";
+        case "6":
+            return "masaje sedativo";
+        case "7":
+            return "masaje con crioterapia";
+        case "8":
+            return "drenaje linfatico";
     }
 }
 
@@ -211,11 +228,20 @@ function verificarPrecio(masaje) {
     else if (masaje === "masaje tailandes") {
         return 2000;
     }
-    else if (masaje === "masaje acupuntura") {
+    else if (masaje === "masaje con acupuntura") {
         return 2500;
     }
-    else if (masaje === "masaje ventosas") {
+    else if (masaje === "masaje con ventosas") {
         return 2800;
+    }
+    else if (masaje === "masaje sedativo") {
+        return 1600;
+    }
+    else if (masaje === "masaje con crioterapia") {
+        return 3000;
+    }
+    else if (masaje === "drenaje linfatico") {
+        return 2600;
     }
 }
 
@@ -244,6 +270,9 @@ masajes.push(new Masaje("02", "Masaje deportivo", "1800"))
 masajes.push(new Masaje("03", "Masaje tailandes", "2000"))
 masajes.push(new Masaje("04", "Masaje con acupuntura", "2500"))
 masajes.push(new Masaje("05", "Masaje con ventosas", "2800"))
+masajes.push(new Masaje("06", "Masaje sedativo", "1600"))
+masajes.push(new Masaje("07", "Masaje con crioterapia", "3000"))
+masajes.push(new Masaje("08", "Drenaje linfatico", "2600"))
 
 
 const masajesPrecioActualizado = masajes.map((actualizacion) => {
@@ -254,6 +283,8 @@ const masajesPrecioActualizado = masajes.map((actualizacion) => {
     }
 })
 
+
+crearLista();
 solicitarNombre()
 let masajeElegido = pedido();
 let precioFinal = verificarPrecio(masajeElegido);
