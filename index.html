@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+    <script defer src="javascript/variables.js"></script>
+    <script defer src="javascript/funciones.js"></script>
+    <script defer src="javascript/dom.js"></script>
+    <script defer src="javascript/LS.js"></script>
     <title>Darwin Relax</title>
 </head>
 
@@ -28,20 +32,40 @@
     <main>
         <section class="hero" id="1">
             <h1>Beneficios</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis mollitia, beatae sit dignissimos
-                quibusdam est, maxime aspernatur ea voluptates unde delectus esse ut aliquid nemo velit quaerat
-                placeat,
-                iste facere?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, laboriosam. Ratione
-                corporis quis autem animi incidunt, natus magnam repellendus cumque repudiandae.</p>
+            <p>El masaje estimula la acción muscular y a su vez, aumenta y mejora la circulación linfática y venosa,
+                promoviendo la eliminación de deshechos o toxinas del organismo. Además, es el mejor método para aliviar
+                la fatiga muscular a causa de estrés, ejercicio excesivo o cansancio. Vení a relajarte, date un tiempo
+                para vos...</p>
         </section>
         <section class="masajes" id="2">
-            <h2>Masajes</h2>
-            <ul id="listado">
-
-            </ul>
+            <div class="card" >
+                
+            </div>
+            <!-------------CARDS------------>
         </section>
         <section class="turnos" id="3">
             <h2>Turnos</h2>
+            <div class="modalContainer" id="modalCconsontainer">
+                <div class="modal">
+                    <h2>Ud se ha registrado con éxito!✅</h2>
+                    <p>A la brevedad serás contactado via Email o WhatsApp para otorgarte un turno. Muchas gracias por
+                        confiar en nosotros!</p>
+                    <button id="cerrar">Cerrar</button>
+                </div>
+            </div>
+            <div class=formulario>
+                <form>
+                    <label for="nombre">Nombre/s:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre/s">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                    <label for="telefono">Tel/Cel</label>
+                    <input type="number" id="telefono" name="telefono" placeholder="Ej: 1130620018">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" id=email placeholder="ejemplo@hotmail.com">
+                </form>
+                <button class=enviar id="enviar">Enviar</button>
+            </div>
         </section>
         <section class="contacto" id="4">
             <h2>Contacto</h2>
@@ -51,11 +75,17 @@
         </section>
     </main>
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum minima fugiat, dolor quae obcaecati
-            consectetur nobis magni quo laboriosam nulla sequi, vel modi fugit fuga perferendis tenetur! Adipisci,
-            pariatur!</p>
+        <a href="index.html"><img src="imagenes/logo.png" alt="logo"></a>
+        <ul>
+            <li>Avenida Vélez Sársfield 730, Ciudad de Mar del Plata</li>
+            <li>Call Center: 4441 1234 -- WhatsApp: 011 11 12345678</li>
+        </ul>
+        <div>
+            <a href="https://es-la.facebook.com"><img src="imagenes/facebook.png" alt="logo facebook"></a>
+            <a href="https://www.instagram.com"><img src="imagenes/instagram.png" alt="logo instagram"></a>
+            <a href="https://twitter.com"><img src="imagenes/twitter.png" alt="logo twitter"></a>
+        </div>
     </footer>
-    <script src="javascript/index.js"></script>
 </body>
 
 </html>
