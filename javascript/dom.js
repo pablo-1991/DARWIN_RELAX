@@ -9,8 +9,8 @@ function subirCards() {
 <h3>PRECIO: $${masaje.precio}</h3>
 <p>¿Con cuánto abona? Por favor abonar con cambio al momento de finalizar el masaje</p>
 <form method="post" id="form">
-<input id="texto" type="text">
-<input type="button" name="enviar"  value="Enviar" onclick="recibir();"></input>
+<input id="texto${masaje.id}"  type="text">
+<input type="button" name="enviar"  value="Enviar" onclick="recibir${masaje.id}();"></input>
 </form>
 </div>
 </div>`}
