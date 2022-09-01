@@ -6,8 +6,6 @@ const enviar = document.querySelector(".enviar");
 const modal = document.querySelector("modalContainer");
 const cerrar = document.getElementById("cerrar");
 
-
-
 class Masaje {
     constructor(id, nombre, precio, imagen, descripcion) {
         this.id = id;
@@ -17,7 +15,6 @@ class Masaje {
         this.descripcion = descripcion;
     }
 }
-
 
 const mas1 = new Masaje("1", "MASAJE DESCONTRACTURANTE", "1500", "./imagenes/descontracturante.jpg", "Se trata de un masaje manual en el cual conseguimos a través de deferentes técnicas aliviar contracturas y normalizar el tono muscular")
 const mas2 = new Masaje("2", "MASAJE DEPORTIVO", "1800", "./imagenes/deportivo.jpg", "Es un masaje estimulante previo a la competición o el entreno, para activar la circulación y calentar los músculos. Mejora la elasticidad y previene lesiones")

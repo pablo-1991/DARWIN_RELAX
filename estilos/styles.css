@@ -123,7 +123,7 @@ main {
     overflow: hidden;
     margin: 20px;
     text-align: center;
-    transition: height 0.4s ease-in .3s;
+    transition: height 0.3s ease-in .2s;
     background-color: white;
 }
 
@@ -148,7 +148,6 @@ main {
     font-weight: 300;
 }
 
-
 .desplegar { 
     margin: 25px;
 
@@ -169,7 +168,7 @@ main {
 }
 
 .modal {
-    background-color: white;
+    background-color: rgb(168, 239, 225);
     width: 600px;
     padding: 30px 50px;
     border-radius: 5px;
@@ -183,7 +182,7 @@ main {
 }
 
 .modal p {
-    font-size: 20px;
+    font-size: 25px;
     opacity: 0.7;
     padding: 5%;
 }
