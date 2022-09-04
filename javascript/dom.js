@@ -1,7 +1,6 @@
 
-function subirCards() {
-    MASAJES.forEach(masaje => {
-        cargarMasajes.innerHTML += `<div class="card">
+function subirCards(masaje) {
+    cargarMasajes.innerHTML += `<div class="card">
 <img src=${masaje.imagen} alt="masaje">
 <h2>${masaje.nombre}</h2>
 <p>${masaje.descripcion}.</p>
@@ -14,10 +13,7 @@ function subirCards() {
 </form>
 </div>
 </div>`}
-    )
-}
 
-subirCards();
 
 
 

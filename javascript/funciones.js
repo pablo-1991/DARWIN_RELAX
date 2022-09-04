@@ -34,23 +34,29 @@ function recibir(id, precio) {
 }
 
 
-function datosCompletos(nombre, apellido, telefono, email) {
-    if (nombre.value == "" || apellido.value == "" || telefono.value == "" || email.value == "") {
-        enviar.addEventListener("click", () => {
+/*function datosCompletos(nombre, apellido, telefono, email) {
+    if (nombre.value == "" || apellido == "" || telefono == "" || email == "") {
+        return enviar.addEventListener("click", () => {
             Swal.fire
-            ({
-                icon: "error",
-                title: "Por favor complete todos los datos",
-            })
+            ({  icon: "error",
+                title: "Por favor complete todos los datos",})
         })
     }
 
-    else {}
-}
+    else {cerrar.addEventListener("click", () => {
+        return modalContainer.classList.remove("mostrarModal")
+        enviar.addEventListener("click", () => {
+            modalContainer.classList.add("mostrarModal")
+        })
+    })}
+}*/
+
+
+
 
 recibir();
 cantidadClicks();
-datosCompletos();
+
 
 
 

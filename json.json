@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "MASAJE DESCONTRACTURANTE",
+        "precio": 1500,
+        "imagen": "./imagenes/descontracturante.jpg",
+        "descripcion": "Se trata de un masaje manual en el cual conseguimos a través de deferentes técnicas aliviar contracturas y normalizar el tono muscular"
+    },
+    {
+        "id": 2,
+        "nombre": "MASAJE DEPORTIVO",
+        "precio": 1800,
+        "imagen": "./imagenes/deportivo.jpg",
+        "descripcion": "Es un masaje estimulante previo a la competición o el entreno, para activar la circulación y calentar los músculos. Mejora la elasticidad y previene lesiones"
+    },
+    {
+        "id": 3,
+        "nombre": "MASAJE TAILANDES",
+        "precio": 2000,
+        "imagen": "./imagenes/tailandes.jpg",
+        "descripcion": "Se trata de un masaje de estiramientos y profundidad: es decir, la terapista estirará tus extremidades, cuello, espalda y torso, según vea la necesidad"
+    },
+    {
+        "id": 4,
+        "nombre": "MASAJE CON ACUPUNTURA",
+        "precio": 2500,
+        "imagen": "./imagenes/acupuntura.jpg",
+        "descripcion": "Consiste en la inserción de agujas muy finas en la piel en puntos estratégicos del cuerpo. Esta técnica milenaria China se utiliza con frecuencia para tratar el dolor"
+    },
+    {
+        "id": 5,
+        "nombre": "MASAJE CON VENTOSAS",
+        "precio": 2800,
+        "imagen": "./imagenes/ventosas.jpg",
+        "descripcion": "Consiste en aplicar ventosas sobre el cuerpo, a las que se les extrae el aire, y que se manipulan con el fin de eliminar toxinas de la sangre y la linfa, o tratar diversas afecciones"
+    },
+    {
+        "id": 6,
+        "nombre": "MASAJE SEDATIVO",
+        "precio": 1600,
+        "imagen": "./imagenes/sedativo.jpg",
+        "descripcion": "Se utiliza para armonizar el sistema nervioso consiguiendo un determinado grado de relajación muscular, contribuyendo a que el individuo recupere y mantenga el equilibrio psicofísico"
+    },
+    {
+        "id": 7,
+        "nombre": "MASAJE CON CRIOTERAPIA",
+        "precio": 3000,
+        "imagen": "./imagenes/crioterapia.jpg",
+        "descripcion": "Las Vendas frías son un tratamiento descongestivo, natural y relajante que aprovecha el metabolismo de nuestro cuerpo para lograr la hidratación, reafirmación y humectación de la piel"
+    },
+    {
+        "id": 8,
+        "nombre": "DRENAJE LINFATICO",
+        "precio": 2600,
+        "imagen": "./imagenes/linfatico.jpg",
+        "descripcion": "Es un tipo de masaje, suave y ligero, que se aplica sobre el sistema circulatorio y cuyo objetivo es movilizar los líquidos del organismo para favorecer la eliminación de las sustancias de deshecho que se acumulan entre las células"
+    }
+]

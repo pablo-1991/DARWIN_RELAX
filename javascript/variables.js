@@ -6,6 +6,21 @@ const enviar = document.querySelector(".enviar");
 const modal = document.querySelector("modalContainer");
 const cerrar = document.getElementById("cerrar");
 
+
+async function servidorDatos() {
+    await fetch("https://6314b345fc9dc45cb4f210b9.mockapi.io/masajes")
+        .then((response) => response.json())
+        .catch((error) => console.error("Ocurrió un error al intentar cargar los items", error))
+        .then((data) => {
+            let MASAJES = data
+            console.log(data)
+            MASAJES.forEach(masaje => {
+                subirCards(masaje)
+            })
+        })
+        
+}
+
 class Masaje {
     constructor(id, nombre, precio, imagen, descripcion) {
         this.id = id;
@@ -25,6 +40,7 @@ const mas6 = new Masaje("6", "MASAJE SEDATIVO", "1600", "./imagenes/sedativo.jpg
 const mas7 = new Masaje("7", "MASAJE CON CRIOTERAPIA", "3000", "./imagenes/crioterapia.jpg", "Las Vendas frías son un tratamiento descongestivo, natural y relajante que aprovecha el metabolismo de nuestro cuerpo para lograr la hidratación, reafirmación y humectación de la piel")
 const mas8 = new Masaje("8", "DRENAJE LINFATICO", "2600", "./imagenes/linfatico.jpg", "Es un tipo de masaje, suave y ligero, que se aplica sobre el sistema circulatorio y cuyo objetivo es movilizar los líquidos del organismo para favorecer la eliminación de las sustancias de deshecho que se acumulan entre las células")
 
-MASAJES.push (mas1, mas2, mas3, mas4, mas5, mas6, mas7, mas8);
+//MASAJES.push(mas1, mas2, mas3, mas4, mas5, mas6, mas7, mas8);
 
-console.table(MASAJES);
+//console.table(MASAJES);
+servidorDatos();
