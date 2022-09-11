@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
 }
 
-
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -74,7 +73,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url(../imagenes/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.418)), url(../imagenes/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +86,8 @@ main {
 .hero h1 {
     font-size: 50px;
     padding: 3%;
-    color: black;
+    color: rgb(255, 128, 0);
+    text-shadow: 5px 5px 5px black;
     text-align: start;
     font-weight: bold;
 }
@@ -148,7 +148,7 @@ main {
     font-weight: 300;
 }
 
-.desplegar { 
+.desplegar {
     margin: 25px;
 
 }
@@ -207,7 +207,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
 }
 
 .turnos h2 {
@@ -262,7 +261,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5%;
 }
 
 .contacto h2 {
@@ -273,10 +271,17 @@ main {
     font-weight: bold;
 }
 
+.contacto p {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 0% 10% 3% 10%;
+}
+
 /*-------------------------------FOOTER------------------------------------*/
 
 footer {
-    background-color: rgb(192, 150, 35);
+    background: linear-gradient(90deg, rgba(255, 98, 0, 0.8799894957983193) 9%, rgba(202, 170, 5, 0.8575805322128851) 88%);
     grid-area: footer;
     height: 15vh;
     display: flex;
@@ -285,13 +290,13 @@ footer {
     padding: 5%;
 }
 
-
 footer ul {
     padding: 0;
 }
 
 footer ul li {
     color: white;
+    font-size: 20px;
     list-style-type: none;
 }
 

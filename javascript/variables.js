@@ -1,11 +1,9 @@
 
 const MASAJES = [];
 const cargarMasajes = document.querySelector(".masajes");
-const clicks = document.getElementById("turnos");
 const enviar = document.querySelector(".enviar");
 const modal = document.querySelector("modalContainer");
 const cerrar = document.getElementById("cerrar");
-
 
 async function servidorDatos() {
     await fetch("https://6314b345fc9dc45cb4f210b9.mockapi.io/masajes")
@@ -18,7 +16,6 @@ async function servidorDatos() {
                 subirCards(masaje)
             })
         })
-        
 }
 
 class Masaje {
@@ -42,5 +39,4 @@ const mas8 = new Masaje("8", "DRENAJE LINFATICO", "2600", "./imagenes/linfatico.
 
 //MASAJES.push(mas1, mas2, mas3, mas4, mas5, mas6, mas7, mas8);
 
-//console.table(MASAJES);
 servidorDatos();

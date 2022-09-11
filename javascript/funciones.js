@@ -1,31 +1,17 @@
-function cantidadClicks() {
-    clicks.addEventListener("click", () => { console.log("CANTIDAD DE CLICKS") })
-}
-
-enviar.addEventListener("click", () => {
-    modalContainer.classList.add("mostrarModal")
-})
-
-cerrar.addEventListener("click", () => {
-    modalContainer.classList.remove("mostrarModal")
-})
-
 function recibir(id, precio) {
-    let texto = "texto" + id;
-    let monto = document.getElementById(texto).value;
-    (parseInt(monto) > precio) &&
+    const texto = "texto" + id;
+    const monto = (document.getElementById(texto)).value;
+    ((monto) > precio) &&
         Swal.fire({
             icon: "info",
-            title: "Su vuelto es de $" + (parseInt(monto) - precio),
+            title: "Su vuelto es de $" + ((monto) - precio),
         })
-
     if (parseInt(monto) == precio) {
         Swal.fire({
             icon: "success",
             title: "Muchas gracias por confiar en nosotros!",
         })
     }
-
     (parseInt(monto) < precio) &&
         Swal.fire({
             icon: "error",
@@ -33,29 +19,32 @@ function recibir(id, precio) {
         })
 }
 
+function datosCompletos() {
+    const nombre = document.getElementById("nombre");
+    const apellido = document.getElementById("apellido");
+    const telefono = document.getElementById("telefono");
+    const email = document.getElementById("email");
+    const cerrar = document.getElementById("cerrar");
+    const enviar = document.querySelector(".enviar");
 
-/*function datosCompletos(nombre, apellido, telefono, email) {
-    if (nombre.value == "" || apellido == "" || telefono == "" || email == "") {
-        return enviar.addEventListener("click", () => {
-            Swal.fire
-            ({  icon: "error",
-                title: "Por favor complete todos los datos",})
-        })
+    if (nombre.value === "" || apellido.value === "" || telefono.value === "" || email.value === "") {
+        Swal.fire
+            ({
+                icon: "error",
+                title: "Por favor complete todos los datos",
+            })
     }
-
-    else {cerrar.addEventListener("click", () => {
-        return modalContainer.classList.remove("mostrarModal")
+    else {
         enviar.addEventListener("click", () => {
             modalContainer.classList.add("mostrarModal")
         })
-    })}
-}*/
+        cerrar.addEventListener("click", () => {
+            modalContainer.classList.remove("mostrarModal")
+        })
+    }
+}
 
 
-
-
-recibir();
-cantidadClicks();
 
 
 
